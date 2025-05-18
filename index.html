@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>~~GOPU VISHAL~~</title>
+      <link href="styles/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- - -----------header------------->
+      <header>
+         <div class="container">
+            <nav>
+               <div class="nav-left">
+                  <a href="#">GOPU.VISHAL</a>
+               </div>
+               <div class="nav-right">
+                  <ul>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#services">Services</a></li>
+                     <li><a href="#projects">Projects</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                  </ul>
+               </div>
+            </nav>
+            <div class="greeting">
+               <h1>
+                  <small>Hello,<br> I'm </small><span>Gopu Vishal</span>
+               </h1>
+               <p> A passionate web developer, designer, and tech enthusiast.</p>
+            </div>
+         </div>
+      </header>
+      <hr>
+      <!-- - -----------About------------->
+      <section id="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-1">
+                  <img src="images/about-img.jpg">
+               </div>
+               <div class="col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>
+                     I'm Gopu Vishal, a Computer Science and Engineering student at CBIT with a passion for full-stack development, AI/ML, and mobile app creation. Skilled in C, C++, Java, Python (Django, Flask), .NET, and the MERN stack, I love building innovative solutions that solve real-world problems. I’m proud to have secured State 1st in the Srujana Tech Fest and continue to explore new technologies with curiosity and dedication.
+                  </p>
+                  <div class="tabs">
+                     <p class="skill-link tab-link active-link" onclick=open_tab('skills')>Skills</p>
+                     <p class="exp-link tab-link" onclick=open_tab('experience')>Experience</p>
+                     <p class="edu-link tab-link" onclick=open_tab('education') >Education</p>
+                  </div>
+                  <div class="tab-contents skill-tab active-tab" id="skills">
+                     <ul>
+                        <li><span>WEB DEVELOPMENT</span><br/>Web development for web applications.</li>
+                        <li><span>ANDROID DEVELOPMENT</span><br>Apllication development for ios/android.</li>
+                        <li><span>AI/ML </span><br>Building chatbots, analysing data.</li>
+                     </ul>
+                  </div>
+                  <div class="tab-contents exp-tab" id="experience">
+                     <ul>
+                        <li><span>WON SRUJANA TECH FEST</span><br> Developed a SMART PREGANCY MONITORING SYSTEM WITH AI ASSISTANCE,which won 1st prize at the state-level Srujana Tech Fest.</li>
+                        <li><span>INTERNSHIP</span><br> SRI BHADRAKLI TECH PVT LTD<br> Worked on Developing .net application, Django, Android applications.</li>
+                        <li><span>FREELANCE PROJECT</span><br> Created a Allumini website using MERN stack.</li>
+                     </ul>
+                  </div>
+                  <div class="tab-contents edu-tab" id="education">
+                     <ul>
+                        <li><span>B.Tech in Computer Science</span><br> Chathanya Bharathi Institue Of Technology 2025–2028.</li>
+                        <li><span>Diploma in CSE</span><br> GOVT Polytechnic Warangal College, 2022–2025.</li>
+                        <li><span>SSC</span><br> Oasis Public School[cbse],2022.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- - -----------services------------->
+      <section id="services">
+         <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+               <div class="web-service">
+                  <img src="images/code.svg">
+                  <h2>WEBSITE DEVELOPMENT</h2>
+                  <p>Professional websites with modern design, SEO, and responsive layouts.</p>
+                  <a href="#contact">more...</a>
+               </div>
+               <div class="app-service">
+                  <img src="images/application.svg">
+                  <h2>MOBILE APP DEVELOPMENT</h2>
+                  <p>High-performance apps for Android and iOS tailored to your goals.</p>
+                  <a href="#contact">more...</a>
+               </div>
+               <div class="aiml-service">
+                  <img src="images/chatbot.svg">
+                  <h2>AI & MACHINE LEARNING</h2>
+                  <p>Smart AI solutions including chatbots, prediction systems, and analytics.</p>
+                  <a href="#contact">more...</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- - -----------header------------->
+      <section id="projects">
+      </section>
+      <section id="contact">
+      </section>
+   </body>
+   <script>
+      var tab_links=document.getElementsByClassName('tab-link');
+      var tab_contents=document.getElementsByClassName('tab-contents');
+      function open_tab(tab_name)
+      {
+         for(tab_link of tab_links)
+         {
+            tab_link.classList.remove('active-link');
+         }
+         for(tab_content of tab_contents)
+         {
+            tab_content.classList.remove('active-tab');
+         }
+         event.currentTarget.classList.add("active-link");   
+         document.getElementById(tab_name).classList.add("active-tab");  
+      }
+         
+      
+      
+      
+      
+      
+           
+         
+   </script>
+</html>
+<!--<h2>About</h2>
+   <p>
+     I'm Gopu Vishal, a passionate and driven Computer Science and Engineering undergraduate currently in my 2nd year at Chaitanya Bharathi Institute of Technology (CBIT). I have a strong foundation in programming with hands-on experience in languages like C, C++, Java, and Python, and frameworks such as Django and Flask. I'm also skilled in MySQL, .NET, Git, and Android Application Development.
+   </p><p>
+   My interest lies in building smart, scalable solutions using modern technologies, especially in areas like AI and Machine Learning. I continuously seek to improve and innovate, which led me to earn State 1st in the prestigious Srujana Tech Fest.
+   </p><p>
+   Outside academics, I enjoy exploring new tools and collaborating on real-world projects that challenge my problem-solving skills. I'm enthusiastic about contributing to the tech community and growing as a full-stack and AI developer.
+   </p>-->
